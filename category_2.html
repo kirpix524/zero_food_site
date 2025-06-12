@@ -2,50 +2,115 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>СУПЫ</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Ваши стили -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <h1>СУПЫ</h1>
-    <nav>
-      <a href="index.html">← Назад к меню</a>
+    <nav class="navbar navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">← Назад к меню</a>
+      </div>
     </nav>
   </header>
-  <main>
-    <div class="dish-row">
-      <img src="images/Sups/Pumpkin cream soup/01.jpeg" alt="Крем-суп из тыквы">
-      <div class="dish-info">
-        <h2>Крем-суп из тыквы</h2>
-        <p>Запечённая тыква с морковью и луком, пюрированная до однородности, подаётся с каплей трюфельного масла, сырным кремом и семенами тыквы.</p>
+
+  <!-- MAIN CONTENT -->
+  <main class="my-5">
+    <div class="container">
+      <h1 class="mb-4">СУПЫ</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Карточка 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Sups/Pumpkin cream soup/01.jpeg"
+                 class="card-img-top" alt="Крем‑суп из тыквы">
+            <div class="card-body">
+              <h5 class="card-title">Крем‑суп из тыквы</h5>
+              <p class="card-text">
+                Запечённая тыква с морковью и луком, пюрированная до однородности,
+                подаётся с каплей трюфельного масла, сырным кремом и семенами тыквы.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">380 ₽</span>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Sups/King's soup/01.jpeg"
+                 class="card-img-top" alt="Уха по‑царски">
+            <div class="card-body">
+              <h5 class="card-title">Уха по‑царски</h5>
+              <p class="card-text">
+                Прозрачный бульон из головы и хвоста лосося с душистым перцем и лавровым листом,
+                филе судака, свежая петрушка, ломтик ржаного хлеба и сливочное масло.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">460 ₽</span>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Sups/Ukrainian borscht/01.jpeg"
+                 class="card-img-top" alt="Борщ украинский">
+            <div class="card-body">
+              <h5 class="card-title">Борщ украинский</h5>
+              <p class="card-text">
+                На говяжьем бульоне со свёклой, капустой, картофелем и морковью,
+                подаётся со сметаной и свежим укропом.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">350 ₽</span>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка 4 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Sups/Mushroom cream soup/01.jpeg"
+                 class="card-img-top" alt="Грибной крем‑суп">
+            <div class="card-body">
+              <h5 class="card-title">Грибной крем‑суп</h5>
+              <p class="card-text">
+                Пюре из шампиньонов и белых грибов со сливками и луком,
+                подаётся с хрустящим багетом и каплей чесночного масла.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">400 ₽</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="dish-price">380 ₽</div>
-    </div>
-    <div class="dish-row">
-      <img src="images/Sups/King's soup/01.jpeg" alt="Уха по-царски">
-      <div class="dish-info">
-        <h2>Уха по-царски</h2>
-        <p>Прозрачный бульон из головы и хвоста лосося, душистый перец и лавровый лист, филе судака, свежая петрушка, ломтик ржаного хлеба и сливочное масло.</p>
-      </div>
-      <div class="dish-price">460 ₽</div>
-    </div>
-    <div class="dish-row">
-      <img src="images/Sups/Ukrainian borscht/01.jpeg" alt="Борщ украинский">
-      <div class="dish-info">
-        <h2>Борщ украинский</h2>
-        <p>Сочный бульон на говяжьих костях, свёкла, капуста, картофель и морковь, подаётся со сметаной и укропом.</p>
-      </div>
-      <div class="dish-price">350 ₽</div>
-    </div>
-    <div class="dish-row">
-      <img src="images/Sups/Mushroom cream soup/01.jpeg" alt="Грибной крем-суп">
-      <div class="dish-info">
-        <h2>Грибной крем-суп</h2>
-        <p>Суп-пюре из шампиньонов и белых грибов с луком и сливками. Подаётся с хрустящим багетом и каплей чесночного масла.</p>
-      </div>
-      <div class="dish-price">400 ₽</div>
     </div>
   </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 Ресторан «Вкусняшка»</p>
+      <p class="mb-2">Тел.: +7 (123) 456‑78‑90 | Email: info@vkusniashka.ru</p>
+      <div>
+        <a href="#" class="me-3">Facebook</a>
+        <a href="#" class="me-3">Instagram</a>
+        <a href="#">VK</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -2,50 +2,114 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ДЕСЕРТЫ</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Ваши стили -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <h1>ДЕСЕРТЫ</h1>
-    <nav>
-      <a href="index.html">← Назад к меню</a>
+    <nav class="navbar navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">← Назад к меню</a>
+      </div>
     </nav>
   </header>
-  <main>
-    <div class="dish-row">
-      <img src="images/Desserts/Tiramisu classic/01.jpeg" alt="Тирамису классическое">
-      <div class="dish-info">
-        <h2>Тирамису классическое</h2>
-        <p>Слои пропитанных в эспрессо савоярди и нежного маскарпоне, посыпанные какао-порошком. Лёгкая текстура, яркий баланс сладости и горечи.</p>
+
+  <!-- MAIN CONTENT -->
+  <main class="my-5">
+    <div class="container">
+      <h1 class="mb-4">ДЕСЕРТЫ</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Карточка 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Desserts/Tiramisu classic/01.jpeg"
+                 class="card-img-top" alt="Тирамису классическое">
+            <div class="card-body">
+              <h5 class="card-title">Тирамису классическое</h5>
+              <p class="card-text">
+                Слои савоярди, пропитанные эспрессо, с нежным маскарпоне, присыпанные какао‑порошком. 
+                Лёгкая текстура, баланс сладости и горечи.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">390 ₽</span>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Desserts/Chocolate fondant/01.jpeg"
+                 class="card-img-top" alt="Шоколадный фондан">
+            <div class="card-body">
+              <h5 class="card-title">Шоколадный фондан</h5>
+              <p class="card-text">
+                Мини‑кекс из 70 % тёмного шоколада с растекающейся начинкой, 
+                подаётся с шариком ванильного мороженого и ягодным соусом.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">420 ₽</span>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Desserts/Panna cotta with raspberry sauce/01.jpeg"
+                 class="card-img-top" alt="Панна котта с малиновым соусом">
+            <div class="card-body">
+              <h5 class="card-title">Панна котта с малиновым соусом</h5>
+              <p class="card-text">
+                Итальянский сливочный десерт с ванилью, подаётся с малиновым кули и свежими ягодами.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">360 ₽</span>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка 4 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Desserts/Cheesecake New York/01.jpeg"
+                 class="card-img-top" alt="Чизкейк Нью-Йорк">
+            <div class="card-body">
+              <h5 class="card-title">Чизкейк Нью-Йорк</h5>
+              <p class="card-text">
+                Кремовая сырная начинка на песочной основе, подаётся с клубничным компоте и мятной ноткой.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">410 ₽</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="dish-price">390 ₽</div>
-    </div>
-    <div class="dish-row">
-      <img src="images/Desserts/Chocolate fondant/01.jpeg" alt="Шоколадный фондан">
-      <div class="dish-info">
-        <h2>Шоколадный фондан</h2>
-        <p>Мини-кекс из 70 % тёмного шоколада с растекающейся начинкой, подаётся с шариком ванильного мороженого и ягодным соусом.</p>
-      </div>
-      <div class="dish-price">420 ₽</div>
-    </div>
-    <div class="dish-row">
-      <img src="images/Desserts/Panna cotta with raspberry sauce/01.jpeg" alt="Панна котта с малиновым соусом">
-      <div class="dish-info">
-        <h2>Панна котта с малиновым соусом</h2>
-        <p>Итальянский десерт на основе сливок и ванили, подаётся с малиновым кули и свежими ягодами.</p>
-      </div>
-      <div class="dish-price">360 ₽</div>
-    </div>
-    <div class="dish-row">
-      <img src="images/Desserts/Cheesecake New York/01.jpeg" alt="Чизкейк Нью-Йорк">
-      <div class="dish-info">
-        <h2>Чизкейк Нью-Йорк</h2>
-        <p>Кремовый сырный слой на песочной основе, подаётся с клубничным компоте и мятной ноткой.</p>
-      </div>
-      <div class="dish-price">410 ₽</div>
     </div>
   </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 Ресторан «Вкусняшка»</p>
+      <p class="mb-2">Тел.: +7 (123) 456‑78‑90 | Email: info@vkusniashka.ru</p>
+      <div>
+        <a href="#" class="me-3">Facebook</a>
+        <a href="#" class="me-3">Instagram</a>
+        <a href="#">VK</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+```

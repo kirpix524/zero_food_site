@@ -2,34 +2,82 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>НАПИТКИ</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Ваши стили -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <h1>НАПИТКИ</h1>
-    <nav>
-      <a href="index.html">← Назад к меню</a>
+    <nav class="navbar navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">← Назад к меню</a>
+      </div>
     </nav>
   </header>
-  <main>
-    <div class="dish-row">
-      <img src="images/Drinks/Berry morsels/01.jpeg" alt="Ягодный морс">
-      <div class="dish-info">
-        <h2>Ягодный морс</h2>
-        <p>Настоящий морс из клюквы, малины и черники, сваренный с минимальным добавлением сахара. Освежает и тонизирует.</p>
+
+  <!-- MAIN CONTENT -->
+  <main class="my-5">
+    <div class="container">
+      <h1 class="mb-4">НАПИТКИ</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Карточка 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Drinks/Berry morsels/01.jpeg"
+                 class="card-img-top" alt="Ягодный морс">
+            <div class="card-body">
+              <h5 class="card-title">Ягодный морс</h5>
+              <p class="card-text">
+                Настоящий морс из клюквы, малины и черники с минимальным добавлением сахара.
+                Освежает и тонизирует.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">200 ₽</span>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Drinks/Black tea/01.jpeg"
+                 class="card-img-top" alt="Чёрный чай">
+            <div class="card-body">
+              <h5 class="card-title">Чёрный чай</h5>
+              <p class="card-text">
+                Цейлонский чёрный чай, подаётся с лимоном и мёдом по желанию.
+                Идеален для утренней или вечерней паузы.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="fw-bold">150 ₽</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="dish-price">200 ₽</div>
-    </div>
-    <div class="dish-row">
-      <img src="images/Drinks/Black tea/01.jpeg" alt="Чёрный чай">
-      <div class="dish-info">
-        <h2>Чёрный чай</h2>
-        <p>Чёрный цейлонский чай, подаётся с лимоном и мёдом по желанию. Идеален для утренней или вечерней паузы.</p>
-      </div>
-      <div class="dish-price">150 ₽</div>
     </div>
   </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 Ресторан «Вкусняшка»</p>
+      <p class="mb-2">Тел.: +7 (123) 456‑78‑90 | Email: info@vkusniashka.ru</p>
+      <div>
+        <a href="#" class="me-3">Facebook</a>
+        <a href="#" class="me-3">Instagram</a>
+        <a href="#">VK</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+```
